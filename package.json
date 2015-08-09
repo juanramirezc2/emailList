@@ -1,0 +1,22 @@
+{
+  "name": "EmailChallenge",
+  "description": "Front End Challenge for Fyber",
+  "version": "0.1.0",
+  "authors": [
+    "Juan Gabriel Ramirez <tuxgabo@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/adictovirtual/emailList",
+  "bugs": {
+    "url": "https://github.com/adictovirtual/emailList/issues"
+  },
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.2.0",
+    "morgan": "~1.0.0"
+  }
+}
