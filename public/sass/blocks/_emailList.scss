@@ -4,7 +4,7 @@
   //Desktop styles
   @media screen and (min-width: $break-large) {
     &__list{  /*Element list */
-      @include  rem("font-size",12);
+      @include  rem("font-size",16);
       width: 30%;
       display:inline-block;
       height: 100vh;
@@ -13,6 +13,18 @@
     }
     &__link{
       display:block;
+      padding: 20px;
+      border-bottom: 1px solid black;
+      &[data-read="false"] {
+        background-color:rgba(162, 158, 158, 0.16);
+      }
+
+      &[data-read="true"] {
+        display:none;
+      }
+      &.show{
+        display:block;
+      }
     }
     &__from{
       float:left;
@@ -24,15 +36,15 @@
       clear:both;
     }
     &__item{
-      padding: 20px;
-      border-bottom: 1px solid black;
       &--read{
+        padding: 20px;
         border-bottom-style: dotted;
+        border-bottom: 1px solid black;
       }
     }
     &__content{ /*Element content */
       margin-left: -2px;
-      @include  rem("font-size",12);
+      @include  rem("font-size",16);
       padding: 20px;
       width:70%;
       display:inline-block;

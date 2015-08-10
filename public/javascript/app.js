@@ -1,3 +1,3 @@
 (function(){
-	 navBar.create("/api/emails.json");
+	 list.create("/api/emails.json");
 })(this);
