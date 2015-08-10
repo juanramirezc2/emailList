@@ -99,77 +99,66 @@ html {
 .emailList {
   font-size: 0;
 }
-/* line 4, ../sass/blocks/_emailList.scss */
-.emailList__list {
-  /*Element list */
-  font-size: 16px;
-  font-size: 1rem;
-  width: 30%;
-  display: inline-block;
-  height: 100vh;
-  overflow-y: scroll;
-  border-right: 2px solid black;
-}
-/* line 12, ../sass/blocks/_emailList.scss */
-.emailList__link {
-  display: block;
-  padding: 20px;
-  border-bottom: 1px solid black;
-}
-/* line 16, ../sass/blocks/_emailList.scss */
-.emailList__link[data-read="false"] {
-  background-color: rgba(162, 158, 158, 0.33);
-}
-/* line 20, ../sass/blocks/_emailList.scss */
-.emailList__link[data-read="true"] {
-  display: none;
-}
-/* line 23, ../sass/blocks/_emailList.scss */
-.emailList__link.show {
-  display: block;
-}
-/* line 27, ../sass/blocks/_emailList.scss */
-.emailList__from {
-  float: left;
-}
-/* line 30, ../sass/blocks/_emailList.scss */
-.emailList__received {
-  float: right;
-  font-size: 12px;
-}
-/* line 34, ../sass/blocks/_emailList.scss */
-.emailList__subject {
-  clear: both;
-}
-/* line 38, ../sass/blocks/_emailList.scss */
-.emailList__item--read {
-  padding: 20px;
-  border-bottom-style: dotted;
-  border-bottom: 1px solid black;
-}
-/* line 44, ../sass/blocks/_emailList.scss */
-.emailList__content {
-  /*Element content */
-  margin-left: -2px;
-  font-size: 16px;
-  font-size: 1rem;
-  padding: 20px;
-  width: 70%;
-  display: inline-block;
-  vertical-align: top;
-}
-/* line 51, ../sass/blocks/_emailList.scss */
-.emailList__content-wrapper {
-  border-bottom: solid 2px black;
-  padding: 20px 5px;
-}
-/* line 55, ../sass/blocks/_emailList.scss */
-.emailList__content-subject {
-  font-size: 19px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-/* line 60, ../sass/blocks/_emailList.scss */
-.emailList__content-body {
-  padding: 20px 5px;
+@media screen and (min-width: 768px) {
+  /* line 6, ../sass/blocks/_emailList.scss */
+  .emailList__list {
+    /*Element list */
+    font-size: 16px;
+    font-size: 1rem;
+    width: 30%;
+    display: inline-block;
+    height: 100vh;
+    overflow-y: scroll;
+    border-right: 2px solid black;
+  }
+  /* line 14, ../sass/blocks/_emailList.scss */
+  .emailList__link {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid black;
+  }
+  /* line 18, ../sass/blocks/_emailList.scss */
+  .emailList__link[data-read="false"] {
+    background-color: rgba(162, 158, 158, 0.16);
+  }
+  /* line 22, ../sass/blocks/_emailList.scss */
+  .emailList__link[data-read="true"] {
+    display: none;
+  }
+  /* line 25, ../sass/blocks/_emailList.scss */
+  .emailList__link.show {
+    display: block;
+  }
+  /* line 29, ../sass/blocks/_emailList.scss */
+  .emailList__from {
+    float: left;
+  }
+  /* line 32, ../sass/blocks/_emailList.scss */
+  .emailList__received {
+    float: right;
+  }
+  /* line 35, ../sass/blocks/_emailList.scss */
+  .emailList__subject {
+    clear: both;
+  }
+  /* line 39, ../sass/blocks/_emailList.scss */
+  .emailList__item--read {
+    padding: 20px;
+    border-bottom-style: dotted;
+    border-bottom: 1px solid black;
+  }
+  /* line 45, ../sass/blocks/_emailList.scss */
+  .emailList__content {
+    /*Element content */
+    margin-left: -2px;
+    font-size: 16px;
+    font-size: 1rem;
+    padding: 20px;
+    width: 70%;
+    display: inline-block;
+  }
+  /* line 51, ../sass/blocks/_emailList.scss */
+  .emailList__content-wrapper {
+    border-bottom: solid 2px black;
+  }
 }
