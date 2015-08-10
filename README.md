@@ -4,7 +4,7 @@
 
 for this challenge i use Sass files as a css preprocessor,BEM as Css methodology, Object oriented approach,i have not used Js external libraries for the front End code.
 
-in order to run this code you need to have instaled 
+in order to run this code you need to have installed 
 * NodeJs
 * Npm
 
