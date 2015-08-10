@@ -1,0 +1,42 @@
+.emailList{ //Block Email List
+  //Mobile styles
+  font-size:0;
+  //Desktop styles
+  @media screen and (min-width: $break-large) {
+    &__list{  /*Element list */
+      @include  rem("font-size",12);
+      width: 30%;
+      display:inline-block;
+      height: 100vh;
+      overflow-y: scroll;
+      border-right: 2px solid black;
+    }
+    &__link{
+      display:block;
+    }
+    &__from{
+      float:left;
+    }
+    &__received{
+      float:right;
+    }
+    &__subject{
+      clear:both;
+    }
+    &__item{
+      padding: 20px;
+      border-bottom: 1px solid black;
+      &--read{
+        border-bottom-style: dotted;
+      }
+    }
+    &__content{ /*Element content */
+      margin-left: -2px;
+      @include  rem("font-size",12);
+      padding: 20px;
+      width:70%;
+      display:inline-block;
+      vertical-align: top;
+    }
+  }
+}
